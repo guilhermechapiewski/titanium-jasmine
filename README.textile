@@ -1,4 +1,4 @@
-h1. titanium-jasmine: testing for Titanium Mobile
+h1. { 'titanium-jasmine': 'testing for Titanium Mobile' }
 
 h2. About
 

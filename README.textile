@@ -1,4 +1,4 @@
-h1. titanium-jasmine
+h1. titanium-jasmine: testing for Titanium Mobile
 
 h2. About
 
@@ -6,15 +6,17 @@ h2. About
 
 h2. How it works
 
+"Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ translates your hard won JavaScript skills into native applications that perform and look just like they were written in Objective-C (iPhone and iPad) or Java (Android).
+
 "Jasmine":http://pivotal.github.com/jasmine/ is a "BDD-style":http://behaviour-driven.org framework for JavaScript that makes your tests look awesome:
 
 <pre>describe("titanium-jasmine", function() {
   it("should help you develop titanium applications", function() {
-    expect(youTests).toBe('awesome');
+    expect(yourTests).toBe('awesome');
   });
 });</pre>
 
-*titanium-jasmine* puts together "Jasmine":http://pivotal.github.com/jasmine/ and "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/, so you can write Jasmine tests that will run inside your iPhone, iPad and Android applications.
+*titanium-jasmine* puts together "Jasmine":http://pivotal.github.com/jasmine/ and "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/, so you can write Jasmine tests that will run inside your iPhone, iPad and Android applications. *titanium-jasmine* is a *really* simple testing framework that will help you test your "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ applications properly.
 
 h2. How to use it
 

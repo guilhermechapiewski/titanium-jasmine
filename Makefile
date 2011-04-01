@@ -1,7 +1,5 @@
 export PROJECT_NAME=SampleApp
 export PROJECT_ROOT=$(shell pwd)
-export TMP_DIR=$(PROJECT_ROOT)/tmp/
-export SVN_DIR=$(TMP_DIR)/$(PROJECT_NAME)_trunk/
 
 run:
 	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/

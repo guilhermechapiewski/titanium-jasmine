@@ -5,9 +5,11 @@
     }
     
     /**
-	* Jasmine reporter that outputs spec results to a new window inside your iOS 
-	* application. Useful if you are developing iOS applications with Titanium 
-	* Mobile and wants to unit test your code.
+	* TitaniumReporter, by Guilherme Chapiewski - http://guilhermechapiewski.com
+	*
+	* TitaniumReporter is a Jasmine reporter that outputs spec results to a new 
+	* window inside your iOS application. It helps you develop Titanium Mobile 
+	* applications with proper unit testing.
 	*
 	* Usage:
 	*

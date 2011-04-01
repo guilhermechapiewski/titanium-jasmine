@@ -1,0 +1,33 @@
+h1. titanium-jasmine
+
+h2. About
+
+*titanium-jasmine* is a testing framework for "Appcelerator's Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ based on "Pivotal's Jasmine":http://pivotal.github.com/jasmine/.
+
+h2. How it works
+
+"Jasmine":http://pivotal.github.com/jasmine/ is a "BDD-style":http://behaviour-driven.org framework for JavaScript that makes your tests look awesome:
+
+<pre>describe("titanium-jasmine", function() {
+  it("should help you develop titanium applications", function() {
+    expect(youTests).toBe('awesome');
+  });
+});</pre>
+
+*titanium-jasmine* puts together "Jasmine":http://pivotal.github.com/jasmine/ and "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/, so you can write Jasmine tests that will run inside your iPhone, iPad and Android applications.
+
+h2. How to use it
+
+Download the source code, go to project root and type:
+
+<pre>$ make test</pre>
+
+To run the application without executing the tests, go to project root and type:
+
+<pre>$ make run</pre>
+
+h2. How to integrate into your project
+
+Just copy the *SampleApp/Resources/test* folder to your project and modify the files accordingly.
+
+This project comes with a sample application located under *SampleApp* directory. You can inspect this project to understand how the testing structure works.

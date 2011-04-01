@@ -8,10 +8,15 @@ TI_DIR="/Library/Application\ Support/Titanium"
 TI_ASSETS_DIR="${TI_DIR}/mobilesdk/osx/${TI_SDK_VERSION}"
 TI_IPHONE_DIR="${TI_ASSETS_DIR}/iphone"
 TI_BUILD="${TI_IPHONE_DIR}/builder.py"
-APP_DEVICE="iphone"
+APP_DEVICE=${DEVICE_TYPE}
 
 if [ "PROJECT_NAME" == "" ]; then
 	echo "[ERROR] Please inform PROJECT_NAME."
+	exit 1
+fi
+
+if [ "DEVICE_TYPE" == "" ]; then
+	echo "[ERROR] Please inform DEVICE_TYPE ('ipad' or 'iphone')."
 	exit 1
 fi
 

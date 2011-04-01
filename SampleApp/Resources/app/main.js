@@ -17,7 +17,7 @@ var sampleapp = {};
 		    backgroundColor:'#fff'
 		});
 		var tab1 = Titanium.UI.createTab({  
-		    icon:'KS_nav_views.png',
+		    icon:'images/KS_nav_views.png',
 		    title:'Tab 1',
 		    window:win1
 		});
@@ -40,7 +40,7 @@ var sampleapp = {};
 		    backgroundColor:'#fff'
 		});
 		var tab2 = Titanium.UI.createTab({  
-		    icon:'KS_nav_ui.png',
+		    icon:'images/KS_nav_ui.png',
 		    title:'Tab 2',
 		    window:win2
 		});

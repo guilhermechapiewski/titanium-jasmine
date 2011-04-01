@@ -1,6 +1,6 @@
 PROJECT_NAME=SampleApp
 PROJECT_ROOT=$(shell pwd)
-DEVICE_TYPE=ipad
+DEVICE_TYPE=iphone
 
 run:
 	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/
@@ -18,6 +18,6 @@ clean:
 	@echo "Deleted: ${PROJECT_ROOT}/${PROJECT_NAME}/build/iphone/*"
 
 launch-titanium:
-	@echo "Building with Titanium..."
+	@echo "Building with Titanium... (DEVICE_TYPE:${DEVICE_TYPE})"
 	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/build/iphone/
 	@PROJECT_NAME=${PROJECT_NAME} PROJECT_ROOT=${PROJECT_ROOT} DEVICE_TYPE=${DEVICE_TYPE} bash ${PROJECT_ROOT}/bin/titanium.sh

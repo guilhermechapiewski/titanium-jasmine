@@ -2,13 +2,13 @@
 
 PROJECT_NAME=${PROJECT_NAME}
 PROJECT_ROOT=${PROJECT_ROOT:-../}
+APP_DEVICE=${DEVICE_TYPE}
 IPHONE_SDK_VERSION="4.2"
 TI_SDK_VERSION="1.6.1"
 TI_DIR="/Library/Application\ Support/Titanium"
 TI_ASSETS_DIR="${TI_DIR}/mobilesdk/osx/${TI_SDK_VERSION}"
 TI_IPHONE_DIR="${TI_ASSETS_DIR}/iphone"
 TI_BUILD="${TI_IPHONE_DIR}/builder.py"
-APP_DEVICE=${DEVICE_TYPE}
 
 if [ "PROJECT_NAME" == "" ]; then
 	echo "[ERROR] Please inform PROJECT_NAME."
@@ -21,8 +21,8 @@ if [ "DEVICE_TYPE" == "" ]; then
 fi
 
 # Get APP parameters from current tiapp.xml
-APP_ID=`cat $(PROJECT_NAME)/tiapp.xml | grep "<id>" | sed -e "s/<\/*id>//g"`
-APP_NAME=`cat $(PROJECT_NAME)/tiapp.xml | grep "<name>" | sed -e "s/<\/*name>//g"`
+APP_ID=`cat ${PROJECT_NAME}/tiapp.xml | grep "<id>" | sed -e "s/<\/*id>//g"`
+APP_NAME=`cat ${PROJECT_NAME}/tiapp.xml | grep "<name>" | sed -e "s/<\/*name>//g"`
 
 if [ "APP_ID" == "" ] || [ "APP_NAME" == "" ]; then
 	echo "[ERROR] Could not obtain APP parameters from tiapp.xml file (does the file exist?)."

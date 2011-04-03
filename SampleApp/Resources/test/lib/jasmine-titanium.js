@@ -27,11 +27,7 @@
 		});
 		
 		var titaniumTestsResultsWebView = Ti.UI.createWebView({
-			html: '',
-			top: 5,
-		    left: 5,
-			width: 310,
-			height: 470
+			html: ''
 		});
 		titaniumTestWindow.add(titaniumTestsResultsWebView);
 		titaniumTestWindow.open();

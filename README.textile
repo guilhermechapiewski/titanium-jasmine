@@ -20,11 +20,23 @@ h2. How to start the project
 
 Download the source code, go to the project root and type:
 
-<pre>$ make test</pre>
+<pre>$ make run-iphone</pre>
 
-To run the application without executing the tests, go to project root and type:
+To run the application on the iPad, type:
 
-<pre>$ make run</pre>
+<pre>$ make clean && make run-ipad</pre>
+
+_* You just have to use "make clean" before the run command if you change the device type. If you're using the same device between executions, it's not necessary to execute "make clean" because it will force Titanium to re-compile the entire project again, which is considerably slow._
+
+To run the application executing the tests, go to project root and type:
+
+<pre>$ make test-iphone</pre>
+
+Or:
+
+<pre>$ make test-ipad</pre>
+
+_* Remember to execute "make clean" whenever you change the device type._
 
 You don't have to import the project on Titanium Developer. You can do that if you want, but I prefer to start from the command line. If you want to do this in your project too, just copy "Makefile":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/Makefile and the "bin":https://github.com/guilhermechapiewski/titanium-jasmine/tree/master/bin directory to your project.
 

@@ -3,14 +3,33 @@
 
 PROJECT_NAME=SampleApp
 PROJECT_ROOT=$(shell pwd)
-DEVICE_TYPE=iphone
+
+run-iphone:
+	@DEVICE_TYPE=iphone make run
+
+test-iphone:
+	@DEVICE_TYPE=iphone make test
+
+run-ipad:
+	@DEVICE_TYPE=ipad make run
+
+test-ipad:
+	@DEVICE_TYPE=ipad make test
 
 run:
+	@if [ "${DEVICE_TYPE}" == "" ]; then\
+		echo "Please run \"make run-[iphone|ipad]\" instead.";\
+		exit 1;\
+	fi
 	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/
 	@echo "" > ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/enabled.js
 	@make launch-titanium
 
 test:
+	@if [ "${DEVICE_TYPE}" == "" ]; then\
+		echo "Please run \"make test-[iphone|ipad]\" instead.";\
+		exit 1;\
+	fi
 	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/
 	@echo "sampleapp.tests_enabled = true;" > ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/enabled.js
 	@make launch-titanium

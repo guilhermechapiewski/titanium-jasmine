@@ -30,6 +30,8 @@ To run the application without executing the tests, go to project root and type:
 
 h2. How to integrate into your project
 
+This project comes with a sample application located under *SampleApp* directory. You can inspect this project to understand how the testing structure works.
+
 Just copy the *SampleApp/Resources/test* folder to your project and modify the files accordingly.
 
-This project comes with a sample application located under *SampleApp* directory. You can inspect this project to understand how the testing structure works.
+More documentation coming soon.

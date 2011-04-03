@@ -32,7 +32,7 @@ h2. How to use in your projects
 
 This project comes with a sample application located in the *SampleApp* directory. You can inspect this sample app to understand how the testing structure works.
 
-To use this in your projects, just copy the *SampleApp/Resources/test* folder and modify the files accordingly.
+To use *titanium-jasmine* in your projects, just copy the *SampleApp/Resources/test* folder and modify the files accordingly.
 
 Here are some details about some key files and directories:
 

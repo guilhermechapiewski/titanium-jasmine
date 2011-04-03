@@ -28,7 +28,7 @@ To run the application without executing the tests, go to project root and type:
 
 You don't have to import the project on Titanium Developer. You can do that if you want, but I prefer to start from the command line. If you want to do this in your project too, just copy "Makefile":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/Makefile and the "bin":https://github.com/guilhermechapiewski/titanium-jasmine/tree/master/bin directory to your project.
 
-h2. How use in your projects
+h2. How to use in your projects
 
 This project comes with a sample application located in the *SampleApp* directory. You can inspect this sample app to understand how the testing structure works.
 

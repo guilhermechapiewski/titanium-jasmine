@@ -54,13 +54,36 @@
         },
 
         reportSpecResults: function(spec) {
-			var color = '#FF0000';
-            if (spec.results().passed()) {
-                color = '#009900';
+			var color = '#009900';
+			var pass = spec.results().passedCount + ' pass';
+			var fail = null;
+            if (!spec.results().passed()) {
+                color = '#FF0000';
+				fail = spec.results().failedCount + ' fail';
             }
 
+			var msg = ' (' + pass;
+			if (fail) {
+				msg += ', ' + fail
+			}
+			msg += ')';
+
             //this.log('[' + spec.suite.description + '] <font color="' + color + '">' + spec.description + '</font><br>');
-			this.log('• <font color="' + color + '">' + spec.description + '</font><br>');
+			this.log('• <font color="' + color + '">' + spec.description + '</font>' + msg + '<br>');
+			
+			if (!spec.results().passed()) {
+				for (var i=0; i<spec.results().items_.length; i++) {
+					if (!spec.results().items_[i].passed_) {
+						this.log('&nbsp;&nbsp;&nbsp;&nbsp;(' + (i+1) + ') <i>' + spec.results().items_[i].message + '</i><br>');
+						if (spec.results().items_[i].expected) {
+							this.log('&nbsp;&nbsp;&nbsp;&nbsp;• Expected: "' + spec.results().items_[i].expected + '"<br>');
+						}
+						this.log('&nbsp;&nbsp;&nbsp;&nbsp;• Actual result: "' + spec.results().items_[i].actual + '"<br>');
+						this.log('<br>');
+					}
+				}
+			}
+			Ti.API.debug(JSON.stringify(spec.results()));
         },
 
         reportSpecStarting: function(spec) {
@@ -70,7 +93,7 @@
         reportSuiteResults: function(suite) {
             var results = suite.results();
 
-            this.log('<b>[' + suite.description + '] ' + results.passedCount + ' of ' + results.totalCount + ' passed.</b><br><br>');
+            this.log('<b>[' + suite.description + '] ' + results.passedCount + ' of ' + results.totalCount + ' assertions passed.</b><br><br>');
         },
 
         log: function(str) {

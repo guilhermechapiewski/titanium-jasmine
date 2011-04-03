@@ -1,3 +1,6 @@
+# Makefile to start Titanium Mobile project from the command line.
+# More info at http://github.com/guilhermechapiewski/titanium-jasmine
+
 PROJECT_NAME=SampleApp
 PROJECT_ROOT=$(shell pwd)
 DEVICE_TYPE=iphone

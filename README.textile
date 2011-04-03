@@ -1,6 +1,6 @@
 h1. titanium-jasmine
 
-*titanium-jasmine* provides testing for "Appcelerator's Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ based on "Pivotal's Jasmine":http://pivotal.github.com/jasmine/.
+*titanium-jasmine* provides testing for "Appcelerator's Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ applications using "Pivotal's Jasmine":http://pivotal.github.com/jasmine/ as the core testing framework.
 
 h2. How it works
 

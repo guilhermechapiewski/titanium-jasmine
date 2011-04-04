@@ -1,2 +1,0 @@
-- Display test error message
-- Resize window and change font size depending on device

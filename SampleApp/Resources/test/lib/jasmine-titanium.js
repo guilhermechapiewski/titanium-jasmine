@@ -81,7 +81,7 @@
 					}
 				}
 			}
-			Ti.API.debug(JSON.stringify(spec.results()));
+			//Ti.API.debug(JSON.stringify(spec.results()));
         },
 
         reportSpecStarting: function(spec) {

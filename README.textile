@@ -16,6 +16,9 @@ h2. How it works
 
 *titanium-jasmine* puts together "Jasmine":http://pivotal.github.com/jasmine/ and "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/, so you can write Jasmine tests that will run inside your iPhone, iPad and Android applications. *titanium-jasmine* is a *really* simple testing framework that will help you test your "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ applications properly.
 
+!https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/titanium-jasmine_iphone.png!
+_* Screenshot: titanium-jasmine test results on the iPhone._
+
 h2. How to start the project
 
 Download the source code, go to the project root and type:
@@ -55,3 +58,7 @@ Here are some details about some key files and directories:
 * "SampleApp/Resources/test/tests.js":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/SampleApp/Resources/test/tests.js contains the test startup code. You will have to add code to include all your test scripts in this file.
 
 * "SampleApp/Resources/test/test_main.js":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/SampleApp/Resources/test/tests.js is a sample file that contains the actual tests. You can (should) create as many files as you want, just remind to import all the modules on *tests.js*.
+
+h2. More info
+
+If you want more info about "how to use Makefiles in your Titanium Mobile":http://guilherme.pro/2011/04/06/titanium-mobile-hack-execute-your-projects-from-the-command-line-using-make/ projects, please take a look at "my blog post":http://guilherme.pro/2011/04/06/titanium-mobile-hack-execute-your-projects-from-the-command-line-using-make/ about it.

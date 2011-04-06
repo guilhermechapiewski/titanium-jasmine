@@ -16,7 +16,8 @@ h2. How it works
 
 *titanium-jasmine* puts together "Jasmine":http://pivotal.github.com/jasmine/ and "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/, so you can write Jasmine tests that will run inside your iPhone, iPad and Android applications. *titanium-jasmine* is a *really* simple testing framework that will help you test your "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ applications properly.
 
-!http://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/titanium-jasmine_iphone.png(titanium-jasmine test results on the iPhone.)!
+!http://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/titanium-jasmine_iphone.png(titanium-jasmine test results on the iPhone)!
+
 _* Screenshot: titanium-jasmine test results on the iPhone._
 
 h2. How to start the project

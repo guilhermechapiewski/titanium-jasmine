@@ -65,3 +65,5 @@ h2. More info
 If you want more info about "how to use Makefiles in your Titanium Mobile":http://guilherme.pro/2011/04/06/titanium-mobile-hack-execute-your-projects-from-the-command-line-using-make/ projects, please take a look at "my blog post":http://guilherme.pro/2011/04/06/titanium-mobile-hack-execute-your-projects-from-the-command-line-using-make/ about it.
 
 If you want to see how I use titanium-jasmine on a real production project, please take a look at "Yahoo! Meme's source code on GitHub":http://github.com/acarlos1000/MemeiPhone.
+
+If you have any other questions, please contact me through "Twitter":http://twitter.com/gchapiewski or "e-mail":http://guilherme.it.

@@ -26,6 +26,8 @@ Download the source code, go to the project root and type:
 
 <pre>$ make run-iphone</pre>
 
+_* Tested with all Titanium Mobile SDK versions from 1.5.0 to 1.6.1. To change the SDK version, change the TI_SDK_VERSION configuration in the bin/titanium.sh script._
+
 To run the application on the iPad, type:
 
 <pre>$ make clean && make run-ipad</pre>
@@ -54,7 +56,7 @@ Here are some details about some key files and directories:
 
 * "SampleApp/Resources/test/lib":https://github.com/guilhermechapiewski/titanium-jasmine/tree/master/SampleApp/Resources/test/lib contains Jasmine library and the reporter that displays tests output on the application.
 
-* _SampleApp/Resources/test/enabled.js_ is the file that controls if the application is in "test mode" or not. This file does not exist in the repository because it is created by the "make" script. When you start the application with the "make" command, this file will be created containing the configuration to start the test runner or not. If you want to know more about this, take a look at the "Makefile":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/Makefile file in the project root.
+* _SampleApp/Resources/test/enabled.js_ is the file that controls if the application is in "test mode" or not. This file does not exist in the repository because it is created by the "make" script. When you start the application with the "make" command, this file will be created containing the configuration to start the test runner or not. If you want to know more about this, take a look at the "Makefile":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/Makefile file in the project root. The Makefile requires "bin/titanium.sh":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/bin/titanium.sh script to run.
 
 * "SampleApp/Resources/test/tests.js":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/SampleApp/Resources/test/tests.js contains the test startup code. You will have to add code to include all your test scripts in this file.
 

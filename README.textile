@@ -16,9 +16,15 @@ h2. How it works
 
 *titanium-jasmine* puts together "Jasmine":http://pivotal.github.com/jasmine/ and "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/, so you can write Jasmine tests that will run inside your iPhone, iPad and Android applications. *titanium-jasmine* is a *really* simple testing framework that will help you test your "Titanium Mobile":http://www.appcelerator.com/products/titanium-mobile-application-development/ applications properly.
 
+Instead of trying to mock all *Titanium.** objects and functions, *titanium-jasmine* will run the tests on your simulator so you can keep using Titanium includes and helper functions on your code, thus making testing much easier.
+
 !http://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_iphone.png!
 
-_* "Screenshot":http://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_iphone.png: titanium-jasmine test results on the iPhone._
+_* "Screenshot":https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_iphone.png: titanium-jasmine test results on the iPhone._
+
+h2. Features
+
+*titanium-jasmine* supports all Jasmine features from "suites, specs":https://github.com/pivotal/jasmine/wiki/Suites-and-specs and "matchers":https://github.com/pivotal/jasmine/wiki/Matchers to "asynchronous testing":https://github.com/pivotal/jasmine/wiki/Asynchronous-specs, "spying/mocking/faking":https://github.com/pivotal/jasmine/wiki/Spies and "before/after functions":https://github.com/pivotal/jasmine/wiki/Before-and-After.
 
 h2. How to start the project
 

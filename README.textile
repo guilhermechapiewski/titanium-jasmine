@@ -75,3 +75,9 @@ If you want more info about "how to use Makefiles in your Titanium Mobile":http:
 If you want to see how I use titanium-jasmine on a real production project, please take a look at "Yahoo! Meme's source code on GitHub":http://github.com/acarlos1000/MemeiPhone.
 
 If you have any other questions, please contact me through "Twitter":http://twitter.com/gchapiewski or "e-mail":http://guilherme.it.
+
+h2. License
+
+*titanium-jasmine* is licensed under Apache Public License (Version 2). See "LICENSE":http://github.com/guilhermechapiewski/titanium-jasmine/blob/master/LICENSE for more details.
+
+Developed by "Guilherme Chapiewski":http://guilherme.it.

@@ -38,6 +38,10 @@ To run the application on the iPad, type:
 
 <pre>$ make clean && make run-ipad</pre>
 
+To run the application on Android, type:
+
+<pre>$ make clean && make run-android</pre>
+
 _* You just have to use "make clean" before the run command if you change the device type. If you're using the same device between executions, it's not necessary to execute "make clean" because it will force Titanium to re-compile the entire project again, which is considerably slow._
 
 To run the application executing the tests, go to project root and type:
@@ -47,6 +51,10 @@ To run the application executing the tests, go to project root and type:
 Or:
 
 <pre>$ make test-ipad</pre>
+
+Or:
+
+<pre>$ make test-android</pre>
 
 _* Remember to execute "make clean" whenever you change the device type._
 

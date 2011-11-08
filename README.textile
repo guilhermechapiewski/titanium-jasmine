@@ -22,9 +22,9 @@ Instead of trying to mock all *Titanium.** objects and functions, *titanium-jasm
 
 _* "Screenshot":https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_iphone.png: titanium-jasmine test results on the iPhone._
 
-!http://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_android.png!
+!http://github.com/graybill/titanium-jasmine/raw/master/etc/screenshot_android.png!
 
-_* "Screenshot":https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_android.png: titanium-jasmine test results on Android._
+_* "Screenshot":https://github.com/graybill/titanium-jasmine/raw/master/etc/screenshot_android.png: titanium-jasmine test results on Android._
 
 h2. Features
 
@@ -43,6 +43,8 @@ To run the application on the iPad, type:
 <pre>$ make clean && make run-ipad</pre>
 
 To run the application on Android, type:
+
+**You must have android, all sdk versions, and at least one emulator device created and running
 
 <pre>$ make clean && make run-android</pre>
 

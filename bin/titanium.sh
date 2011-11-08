@@ -12,14 +12,13 @@ TI_DIR="/Library/Application\ Support/Titanium"
 # Both iOS and Android SDKs are linked in this directory
 TI_ASSETS_DIR="${TI_DIR}/mobilesdk/osx/${TI_SDK_VERSION}"
 
-# iPhone settings
+# iOS settings
 IPHONE_SDK_VERSION="4.2"
 TI_IPHONE_DIR="${TI_ASSETS_DIR}/iphone"
 TI_IPHONE_BUILD="${TI_IPHONE_DIR}/builder.py"
 
 # Android settings
-ANDROID_SDK_VERSION="2.3"
-ANDROID_ADB_ID="10"
+ANDROID_API_LEVEL="10" #the API level of the targeted emulator
 TI_ANDROID_DIR="${TI_ASSETS_DIR}/android"
 TI_ANDROID_BUILD="${TI_ANDROID_DIR}/builder.py"
 ANDROID_SDK_PATH='/usr/local/Cellar/android-sdk/r12'
@@ -43,15 +42,14 @@ if [ "APP_ID" == "" ] || [ "APP_NAME" == "" ]; then
 	exit 1
 fi
 
-if [ ${APP_DEVICE} == "iphone" ]; then
+if [ ${APP_DEVICE} == "iphone"] || [${APP_DEVICE} == "ipad"]; then
 	killall "iPhone Simulator"
 	bash -c "${TI_IPHONE_BUILD} run ${PROJECT_ROOT}/${PROJECT_NAME}/ ${IPHONE_SDK_VERSION} ${APP_ID} ${APP_NAME} ${APP_DEVICE}"
 elif [ ${APP_DEVICE} == "android" ]; then
-	ARGS="${APP_NAME}  ${ANDROID_SDK_PATH} ${PROJECT_ROOT}/${PROJECT_NAME}/ ${APP_ID} ${ANDROID_ADB_ID"
-	bash -c "${TI_ANDROID_BUILD} simulator ${ARGS}"
+	# TODO: check that an android emulator is running, else start one
+	bash -c "${TI_ANDROID_BUILD} simulator ${APP_NAME} ${ANDROID_SDK_PATH} ${PROJECT_ROOT}/${PROJECT_NAME}/ ${APP_ID} ${ANDROID_API_LEVEL}"
 else
-	echo "not supported!"
-	echo ${APP_DEVICE}
+	echo "${APP_DEVICE} is not supported. Only iphone, ipad, and android."
 fi
 
 perl -pe 's/^\[DEBUG\].*$/\e[35m$&\e[0m/g;s/^\[INFO\].*$/\e[36m$&\e[0m/g;s/^\[WARN\].*$/\e[33m$&\e[0m/g;s/^\[ERROR\].*$/\e[31m$&\e[0m/g;'

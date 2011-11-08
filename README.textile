@@ -22,6 +22,10 @@ Instead of trying to mock all *Titanium.** objects and functions, *titanium-jasm
 
 _* "Screenshot":https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_iphone.png: titanium-jasmine test results on the iPhone._
 
+!http://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_android.png!
+
+_* "Screenshot":https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_android.png: titanium-jasmine test results on Android._
+
 h2. Features
 
 *titanium-jasmine* supports all Jasmine features from "suites, specs":https://github.com/pivotal/jasmine/wiki/Suites-and-specs and "matchers":https://github.com/pivotal/jasmine/wiki/Matchers to "asynchronous testing":https://github.com/pivotal/jasmine/wiki/Asynchronous-specs, "spying/mocking/faking":https://github.com/pivotal/jasmine/wiki/Spies and "before/after functions":https://github.com/pivotal/jasmine/wiki/Before-and-After.

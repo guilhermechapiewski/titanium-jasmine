@@ -16,6 +16,12 @@ run-ipad:
 test-ipad:
 	@DEVICE_TYPE=ipad make test
 
+run-android:
+	@DEVICE_TYPE=android make run
+
+test-android:
+	@DEVICE_TYPE=android make test
+
 run:
 	@if [ "${DEVICE_TYPE}" == "" ]; then\
 		echo "Please run \"make run-[iphone|ipad]\" instead.";\

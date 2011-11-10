@@ -44,7 +44,7 @@ To run the application on the iPad, type:
 
 To run the application on Android, type:
 
-**You must have android, all sdk versions, and at least one emulator device created and running
+_* You must have android, applicable sdk versions, and at least one emulator device created and running._
 
 <pre>$ make clean && make run-android</pre>
 

@@ -21,8 +21,8 @@ run:
 		echo "Please run \"make run-[iphone|ipad]\" instead.";\
 		exit 1;\
 	fi
-	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/
-	@echo "" > ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/enabled.js
+	@mkdir -p ${PROJECT_ROOT}/"${PROJECT_NAME}"/Resources/test/
+	@echo "" > ${PROJECT_ROOT}/"${PROJECT_NAME}"/Resources/test/enabled.js
 	@make launch-titanium
 
 test:
@@ -30,16 +30,16 @@ test:
 		echo "Please run \"make test-[iphone|ipad]\" instead.";\
 		exit 1;\
 	fi
-	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/
-	@echo "sampleapp.tests_enabled = true;" > ${PROJECT_ROOT}/${PROJECT_NAME}/Resources/test/enabled.js
+	@mkdir -p ${PROJECT_ROOT}/"${PROJECT_NAME}"/Resources/test/
+	@echo "sampleapp.tests_enabled = true;" > ${PROJECT_ROOT}/"${PROJECT_NAME}"/Resources/test/enabled.js
 	@make launch-titanium
 
 clean:
-	@rm -rf ${PROJECT_ROOT}/${PROJECT_NAME}/build/iphone/*
-	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/build/iphone/
-	@echo "Deleted: ${PROJECT_ROOT}/${PROJECT_NAME}/build/iphone/*"
+	@rm -rf ${PROJECT_ROOT}/"${PROJECT_NAME}"/build/iphone/*
+	@mkdir -p ${PROJECT_ROOT}/"${PROJECT_NAME}"/build/iphone/
+	@echo "Deleted: ${PROJECT_ROOT}/"${PROJECT_NAME}"/build/iphone/*"
 
 launch-titanium:
 	@echo "Building with Titanium... (DEVICE_TYPE:${DEVICE_TYPE})"
 	@mkdir -p ${PROJECT_ROOT}/${PROJECT_NAME}/build/iphone/
-	@PROJECT_NAME=${PROJECT_NAME} PROJECT_ROOT=${PROJECT_ROOT} DEVICE_TYPE=${DEVICE_TYPE} bash ${PROJECT_ROOT}/bin/titanium.sh
+	@PROJECT_NAME="${PROJECT_NAME}" PROJECT_ROOT=${PROJECT_ROOT} DEVICE_TYPE=${DEVICE_TYPE} bash ${PROJECT_ROOT}/bin/titanium.sh

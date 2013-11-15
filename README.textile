@@ -94,4 +94,4 @@ h2. License
 
 *titanium-jasmine* is licensed under Apache Public License (Version 2). See "LICENSE":http://github.com/guilhermechapiewski/titanium-jasmine/blob/master/LICENSE for more details.
 
-Developed by "Guilherme Chapiewski":http://guilherme.it.
+Developed by "Guilherme Chapiewski":http://guilherme.it. Android support by "Linus Graybill":http://github.com/graybill.

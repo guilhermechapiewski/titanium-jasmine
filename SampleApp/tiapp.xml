@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
+<deployment-targets>
+	<target device="iphone">true</target>
+	<target device="ipad">true</target>
+	<target device="android">true</target>
+</deployment-targets>
 <id>com.guilhermechapiewski.sampleapp</id>
 <name>SampleApp</name>
 <version>1.0</version>

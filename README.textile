@@ -22,6 +22,10 @@ Instead of trying to mock all *Titanium.** objects and functions, *titanium-jasm
 
 _* "Screenshot":https://github.com/guilhermechapiewski/titanium-jasmine/raw/master/etc/screenshot_iphone.png: titanium-jasmine test results on the iPhone._
 
+!https://github.com/graybill/titanium-jasmine/raw/android-support/etc/screenshot_android.png!
+
+_* "Screenshot":https://github.com/graybill/titanium-jasmine/raw/android-support/etc/screenshot_android.png: titanium-jasmine test results on Android._
+
 h2. Features
 
 *titanium-jasmine* supports all Jasmine features from "suites, specs":https://github.com/pivotal/jasmine/wiki/Suites-and-specs and "matchers":https://github.com/pivotal/jasmine/wiki/Matchers to "asynchronous testing":https://github.com/pivotal/jasmine/wiki/Asynchronous-specs, "spying/mocking/faking":https://github.com/pivotal/jasmine/wiki/Spies and "before/after functions":https://github.com/pivotal/jasmine/wiki/Before-and-After.
@@ -38,6 +42,12 @@ To run the application on the iPad, type:
 
 <pre>$ make clean && make run-ipad</pre>
 
+To run the application on Android, type:
+
+_* You must have android, applicable sdk versions, and at least one emulator device created and running._
+
+<pre>$ make clean && make run-android</pre>
+
 _* You just have to use "make clean" before the run command if you change the device type. If you're using the same device between executions, it's not necessary to execute "make clean" because it will force Titanium to re-compile the entire project again, which is considerably slow._
 
 To run the application executing the tests, go to project root and type:
@@ -47,6 +57,10 @@ To run the application executing the tests, go to project root and type:
 Or:
 
 <pre>$ make test-ipad</pre>
+
+Or:
+
+<pre>$ make test-android</pre>
 
 _* Remember to execute "make clean" whenever you change the device type._
 

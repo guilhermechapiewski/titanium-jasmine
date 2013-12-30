@@ -80,7 +80,7 @@ Here are some details about some key files and directories:
 
 * "SampleApp/Resources/test/tests.js":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/SampleApp/Resources/test/tests.js contains the test startup code. You will have to add code to include all your test scripts in this file.
 
-* "SampleApp/Resources/test/test_main.js":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/SampleApp/Resources/test/tests.js is a sample file that contains the actual tests. You can (should) create as many files as you want, just remind to import all the modules on *tests.js*.
+* "SampleApp/Resources/test/test_main.js":https://github.com/guilhermechapiewski/titanium-jasmine/blob/master/SampleApp/Resources/test/test_main.js is a sample file that contains the actual tests. You can (should) create as many files as you want, just remind to import all the modules on *tests.js*.
 
 h2. More info
 
